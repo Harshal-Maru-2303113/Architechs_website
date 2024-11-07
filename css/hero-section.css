@@ -1,0 +1,99 @@
+.hero-section {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-division {
+  height: 20vh;
+  width: 70vw;
+  margin-bottom: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+/* _______________________________________________________Main and Extra title Text_______________________________________________________ */
+
+.main-title,
+.extra-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-title {
+  font-size: 90px;
+}
+
+.extra-title {
+  font-size: 60px;
+}
+
+.main-text,
+.extra-text {
+  border-right: 2px solid white;
+  animation: blink-caret 0.75s step-end infinite;
+  text-align: center;
+}
+
+/* _______________________________________________________Get Started Button_______________________________________________________ */
+
+.center-division-button {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+  border-radius: 80px;
+}
+
+.center-division-button > button {
+  padding: 20px;
+  height: 80px;
+  width: 200px;
+  border-radius: 80px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(45deg, #ffffff, #e0e0e0, #d0d0d0, #c0c0c0);
+  background-size: 300% 300%;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover animation for the button */
+.center-division-button > button:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+}
+
+/* _______________________________________________________Animation_______________________________________________________ */
+
+/* Blinking caret animation for cursor*/
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* particel effect */
+
+#particles-js {
+  width: 100%;
+  background-color: #262626;
+}
