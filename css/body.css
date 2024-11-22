@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Public;
+    src: url("/fonts/PublicSans-VariableFont_wght.ttf") format('truetype');
+}
+
+body{
+    font-family: Public;
+    height: 400vh;
+    overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
