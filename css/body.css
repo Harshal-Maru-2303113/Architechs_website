@@ -19,3 +19,8 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+.extra-space{
+    height: 6vh;
+    background-color: black;
+    width: 100%;
+}
