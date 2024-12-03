@@ -1,13 +1,12 @@
 .header {
   width: 100%;
   height: 6vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 99999;
-
+  background: linear-gradient(90deg, #1a1a1a, #333);
+  animation: glowing-box-shadow 3s infinite ease-in-out;
 }
 
 /* _______________________________________________________Options Section_______________________________________________________ */
@@ -53,7 +52,7 @@
 .team:hover,
 .events:hover {
   transform: scale(1.1);
-  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 4px 10px rgba(18, 67, 158, 0.5);
   background-position: right center;
   color: white;
 }
@@ -111,7 +110,6 @@
 
 .logo:hover {
   transform: scale(1.1);
-  filter: brightness(1.2);
   animation-duration: 4s;
 }
 
@@ -133,5 +131,15 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes glowing-box-shadow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgb(108, 236, 236), 0 0 7.5px transparent;
+  }
+  50% {
+    box-shadow: 0 0 7.5px rgb(108, 236, 236), 0 0 10px rgba(108, 236, 236, 0.5);
   }
 }
