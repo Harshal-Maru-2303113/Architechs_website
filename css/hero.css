@@ -6,31 +6,15 @@
   background-image: url(/img/main-bg.png);
   background-size: 100vw 100vh;
   display: flex;
-}
-
-.hero-image-section {
-  width: 60%;
-  height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-writing-section {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text-background {
-  height: 60%;
-  width: 60%;
-  margin-left: 10%;
-  margin-top: 10%;
-  background-image: url(/img/hero-writing-bg.png);
-  background-size: 100% 110%;
+  width: 75%;
+  height: 75%;
+  background-image: url(/img/Untitled\ design.png);
+  background-size: 100% 100%;
   animation: fade-in 1.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -41,54 +25,46 @@
 .hero-text-title,
 .hero-text-writing-section p {
   font-family: "Orbitron", sans-serif;
-  color: rgb(108, 236, 236);
-  letter-spacing: 2px;
+  color: white; /* Changed color to white */
+  letter-spacing: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.7); /* Added text-shadow for elegance */
 }
 
 .hero-text-title {
-  font-size: 50px;
+  font-size: 90px;
   text-align: center;
+  font-weight: bold;
 }
 
 .hero-text-writing-section {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   height: 60%;
-  width: 80%;
-  margin-bottom: 10%;
-  margin-left: 6%;
-  padding: 10% 0%;
-}
-
-.hero-text-get-started {
-  height: 15%;
-  margin-left: 6%;
-  width: 80%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  visibility: hidden;
-  transition: visibility 1s;
+  width: 100%;
+  padding: 5%;
+  line-height: 1.6; /* Added line-height for better readability */
 }
 
 .blinking-caret {
   display: inline-block;
   width: 2px;
   height: 1.2em;
-  background-color: rgb(108, 236, 236);
+  background-color: rgb(255, 255, 255);
   animation: smooth-caret-blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   border-radius: 1px;
 }
+
 /* _______________________________________________________Hero Button Styling_______________________________________________________ */
 
 .get-started-button {
   font-family: "Orbitron", sans-serif;
-  margin: 5% 5% 15% 5%;
-  font-size: 25px;
-  color: rgb(108, 236, 236);
+  padding: 1%;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: black;
   background-color: transparent;
-  border: 1.5px solid rgb(108, 236, 236);
+  border: 1.5px solid rgb(5, 5, 5);
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -105,52 +81,32 @@
 }
 
 .get-started-button:hover {
-  background-color: rgb(108, 236, 236);
+  background-color: rgb(255, 255, 255);
   color: black;
-  box-shadow: 0 0 10px rgb(108, 236, 236);
+  box-shadow: 0 0 10px rgb(207, 207, 207);
 }
 
 .get-started-button:active {
   transform: scale(0.95);
 }
 
-/* _______________________________________________________Hero Image_______________________________________________________ */
-
-.hero-image {
-  height: 90%;
-  width: 70%;
-  background-image: url(/img/hero-img.png);
-  background-size: contain;
-  animation: slide-left 1.5s ease-in-out;
-}
-
 /* _______________________________________________________Animations_______________________________________________________ */
 
 @keyframes glowing-border {
   0% {
-    border-color: rgb(108, 236, 236);
-    box-shadow: 0 0 5px rgb(108, 236, 236);
+    border-color: rgb(109, 109, 109);
+    box-shadow: 0 0 7.5px rgb(161, 161, 161);
   }
   50% {
     border-color: white;
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 25px white;
   }
   100% {
-    border-color: rgb(108, 236, 236);
-    box-shadow: 0 0 5px rgb(108, 236, 236);
+    border-color: rgb(216, 216, 216);
+    box-shadow: 0 0 7.5px rgb(75, 75, 75);
   }
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 
 @keyframes fade-in {
   0% {

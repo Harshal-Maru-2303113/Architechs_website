@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const titleElement = document.querySelector(".hero-text-title");
   const textElement = document.querySelector(".hero-text-title-part1");
-  const textElement2 = document.querySelector(".hero-text-title-part2");
   const button = document.querySelector(".get-started-button");
 
   const sentences = [
     { element: titleElement, text: titleElement.textContent.trim() },
     { element: textElement, text: textElement.textContent.trim() },
-    { element: textElement2, text: textElement2.textContent.trim() },
   ]; // get the three paragraph tags texts
 
   sentences.forEach(({ element }) => (element.innerHTML = ""));

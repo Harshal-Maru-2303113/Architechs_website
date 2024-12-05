@@ -52,7 +52,6 @@
 .team:hover,
 .events:hover {
   transform: scale(1.1);
-  text-shadow: 0px 4px 10px rgba(18, 67, 158, 0.5);
   background-position: right center;
   color: white;
 }
@@ -137,9 +136,9 @@
 @keyframes glowing-box-shadow {
   0%,
   100% {
-    box-shadow: 0 0 5px rgb(108, 236, 236), 0 0 7.5px transparent;
+    box-shadow: 0 0 6px rgb(255, 255, 255), 0 0 9px transparent;
   }
   50% {
-    box-shadow: 0 0 7.5px rgb(108, 236, 236), 0 0 10px rgba(108, 236, 236, 0.5);
+    box-shadow: 0 0 9px rgb(121, 121, 121), 0 0 12px rgba(45, 204, 204, 0.5);
   }
 }
