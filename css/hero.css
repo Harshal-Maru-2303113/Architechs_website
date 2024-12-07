@@ -2,55 +2,70 @@
 
 .hero-section {
   height: 100vh;
-  width: 100%;
-  background-image: url(/img/main-bg.png);
-  background-size: 100vw 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #3f3f3f, rgb(21, 21, 21));
+  background-size: 400% 400%; 
+  animation: gradientAnimation 30s ease-in-out infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10%;
+}
+.archi-part {
+  color: white;
+}
+
+.tech-part {
+  color: yellow;
 }
 
 .hero-writing-section {
-  width: 75%;
-  height: 75%;
-  background-image: url(/img/Untitled\ design.png);
-  background-size: 100% 100%;
-  animation: fade-in 1.5s ease-in-out;
+  width: 40%;
+  aspect-ratio: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 
-.hero-text-title,
-.hero-text-writing-section p {
+
+.hero-image-section{
+  width: 40%;
+  aspect-ratio: 1.12;
+  background: url(/img/hero-bg.png);
+  background-size: contain;
+  border-radius: 20px;
+  animation: fade-in 2s ease-in-out;
+}
+
+.hero-text-title,.hero-text-title-part1{
   font-family: "Orbitron", sans-serif;
-  color: white; /* Changed color to white */
+  color: white; 
   letter-spacing: 15px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.7); /* Added text-shadow for elegance */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.7); 
 }
 
 .hero-text-title {
-  font-size: 90px;
+  font-size: 5vw;
   text-align: center;
   font-weight: bold;
+  margin: 5% 0%;
+  color: #ff9800;
 }
-
-.hero-text-writing-section {
+.hero-text-title-part1{
+  font-size: 2vw;
+  line-gap-override: 10px;
+  margin: 7.5% 0%;
   text-align: center;
-  font-size: 60px;
-  color: white;
-  height: 60%;
-  width: 100%;
-  padding: 5%;
-  line-height: 1.6; /* Added line-height for better readability */
+  line-height: 1.25;
 }
 
 .blinking-caret {
   display: inline-block;
   width: 2px;
   height: 1.2em;
-  background-color: rgb(255, 255, 255);
+  background-color: orange;
   animation: smooth-caret-blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   border-radius: 1px;
 }
@@ -60,7 +75,7 @@
 .get-started-button {
   font-family: "Orbitron", sans-serif;
   padding: 1%;
-  font-size: 35px;
+  font-size: 1.5vw;
   color: rgb(255, 255, 255);
   text-shadow: black;
   background-color: transparent;
@@ -72,6 +87,9 @@
   font-weight: 600;
   visibility: hidden;
   opacity: 0;
+  border: 1px solid white;  
+  margin: 6% 0%;
+  border-radius: 15px;
 }
 
 .get-started-button.glowing {
@@ -81,7 +99,7 @@
 }
 
 .get-started-button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #ff9800;
   color: black;
   box-shadow: 0 0 10px rgb(207, 207, 207);
 }
@@ -107,14 +125,23 @@
   }
 }
 
-
-@keyframes fade-in {
+@keyframes gradientAnimation {
   0% {
-    opacity: 0;
-    transform: scale(0);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    transform: scale(1);
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fade-in {
+  0%{
+   opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
 }
@@ -126,5 +153,59 @@
   }
   50% {
     opacity: 0.5;
+  }
+}
+
+
+/* _______________________________________________________Responsive_______________________________________________________ */
+
+
+@media (max-width: 1400px) {
+  .hero-image-section{
+    display: none;
+  }
+  .hero-writing-section{
+    width: 80%;
+    height: 60%;
+  }
+  .hero-text-title {
+    font-size: 9vw;
+    margin: 4% 0%;
+    text-align: center;
+  }
+  .hero-text-title-part1{
+    font-size: 5vw;
+    margin: 7.5% 0%;
+    line-height: 1.25;
+  }
+  .get-started-button {
+    font-size: 3.5vw;
+    padding: 2%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-image-section{
+    display: none;
+  }
+  .hero-writing-section{
+    width: 80%;
+    height: 50%;
+  }
+  .hero-text-title {
+    font-size: 9vw;
+    margin: 5% 0%;
+    text-align: center;
+  }
+  .hero-text-title-part1{
+    font-size: 5vw;
+    margin: 8% 0%;
+  }
+  .get-started-button {
+    font-size: 4.5vw;
+    padding: 4%;
+    margin-top: 25%;
+    border-radius: 10px;
   }
 }

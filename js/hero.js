@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const sentences = [
     { element: titleElement, text: titleElement.textContent.trim() },
     { element: textElement, text: textElement.textContent.trim() },
-  ]; // get the three paragraph tags texts
+  ]; // get the two paragraph tags texts
 
   sentences.forEach(({ element }) => (element.innerHTML = ""));
 
   let currentSentenceIndex = 0;
-  const typingSpeed = 100; //typing spped
+  const typingSpeed = 100; //typing speed
   const sentenceDelay = 650; // next sentences speed
 
   const typeText = ({ element, text }, callback) => {
@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     } else {
       button.classList.add("glowing");
-      document.querySelector(".hero-text-get-started").style.visibility =
-        "visible"; // Make the section containing the button visible
     }
   };
 
