@@ -11,7 +11,8 @@
 
 body{
     font-family: Public;
-    height: 400vh;
+    /* height: 400vh; */
+    height: auto;
     overflow-x: hidden;
 
 }

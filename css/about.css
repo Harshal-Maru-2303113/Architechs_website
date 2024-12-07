@@ -1,117 +1,174 @@
-/* General Styles for about-section */
+
 .about-section {
-    height: 100vh;
-    width: 100%;
-    background: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text for contrast */
-    font-family: 'Orbitron', sans-serif; /* Matches hero section font */
-    padding: 2rem 0;
-  }
-  
-  .intro {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ff9800; /* Accent color */
-  }
-  
+  min-height: auto;
+  width: 100%;
+  min-height: 90vh;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  padding: 2rem 0;
+}
+
+.intro {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+
+.work {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vision, .wedo {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vision h2, .wedo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.vision p, .wedo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+
+.wedo ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #ff9800;
+}
+
+.wedo ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+
+.club-head {
+  flex: 1;
+  text-align: center;
+}
+
+.head-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.head-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff9800;
+}
+
+.head-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.head-title {
+  font-size: 1rem;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
   .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 3rem;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1200px;
-  }
-  
-  /* Work Section Styling */
-  .work {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .vision, .wedo {
-    background: #1e1e1e; /* Slightly lighter dark background */
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  }
-  
-  .vision h2, .wedo h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #ff9800; /* Accent color */
-  }
-  
-  .vision p, .wedo p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
-  }
-  
-  /* Club Head Styling */
-  .club-head {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .head-info {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    background: #1e1e1e; /* Matches card background */
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
   }
-  
+
+  .club-head {
+    order: -1;
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .vision, .wedo {
+    text-align: center;
+    padding: 1rem;
+  }
+
   .head-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff9800; /* Highlight border */
+    width: 100px;
+    height: 100px;
   }
-  
-  .head-name {
+}
+
+@media (max-width: 300px) {
+  .about-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .intro {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #ff9800; /* Accent color */
   }
-  
+
+  .about-content {
+    width: 100%;
+  }
+
+  .vision, .wedo {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .head-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .head-name {
+    font-size: 1rem;
+  }
+
   .head-title {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    font-style: italic;
+    font-size: 0.9rem;
   }
+
   .wedo ul {
-    margin-top: 1rem;
-    padding-left: 1.5rem; /* Slight indent */
-    list-style-type: disc; /* Classic bullet style */
-    color: #ff9800; /* Accent color for bullets */
+    padding-left: 1rem;
   }
-  
+
   .wedo ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem; /* Matches the paragraph font size */
-    color: #e0e0e0; /* Light text for better readability */
-    line-height: 1.5;
-    position: relative;
+    font-size: 0.9rem;
   }
-  
-  .wedo ul li::marker {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ff9800; /* Accent color for bullets */
-  }
-  
-  .wedo ul li:hover {
-    color: #ffffff; /* Slightly lighter on hover */
-    transform: scale(1.02); /* Subtle zoom effect */
-    transition: all 0.3s ease-in-out;
-  }
-    
+}
