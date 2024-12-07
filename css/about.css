@@ -1,55 +1,63 @@
 
 .about-section {
-  min-height: auto;
   width: 100%;
-  min-height: 90vh;
+  max-width: 100%;
+  height: 60vh;
   background: #121212;
   color: #e0e0e0;
   font-family: 'Orbitron', sans-serif;
-  padding: 2rem 0;
+
 }
 
 .intro {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
   color: #ff9800;
+  letter-spacing: 7.5px;
+  margin: 20px;
 }
 
 .about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 70% 25%;
+  justify-content: center;
   gap: 2rem;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+  padding: 1.5em;
 }
 
-
-.work {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.vision, .wedo {
+.vision{
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.wedo {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .vision h2, .wedo h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #ff9800;
+  letter-spacing: 3px;
 }
 
 .vision p, .wedo p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
+  letter-spacing: 3px;
   color: #e0e0e0;
 }
 
@@ -57,22 +65,22 @@
 .wedo ul {
   margin-top: 1rem;
   padding-left: 1.5rem;
-  list-style-type: disc;
-  color: #ff9800;
+  list-style-type: none;
+  list-style-type: " ➤ " ;
 }
 
 .wedo ul li {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #e0e0e0;
   line-height: 1.5;
+  letter-spacing: 3px;
 }
 
-
-.club-head {
-  flex: 1;
-  text-align: center;
+.wedo li::marker{
+  color: #ff9800;
 }
+
 
 .head-info {
   display: flex;
@@ -82,93 +90,176 @@
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .head-photo {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ff9800;
 }
 
 .head-name {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #ff9800;
+  margin: 5% 0%;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.head-photo{
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .head-title {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 2rem;
   color: #e0e0e0;
-  font-style: italic;
+  font-style: italic; letter-spacing: 3px;
 }
 
-
-@media (max-width: 768px) {
-  .about-content {
+@media (max-width:1300px) {
+  .head-photo{
+    width: 250px;
+    aspect-ratio: 1;
+  }
+  .about-content{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
   }
-
-  .club-head {
+  .head-info {
     order: -1;
-    width: 100%;
+    padding: 5%;
+  display: grid;
+  }
+  .head-name{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .head-photo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .head-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
-  .work {
-    width: 100%;
-  }
-
-  .vision, .wedo {
+  .vision{
     text-align: center;
+    padding: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  }
+  .wedo {
+    text-align: center;
+    padding: 1rem;
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  }
+  .wedo > ul {
+    text-align: left;
     padding: 1rem;
   }
 
-  .head-photo {
-    width: 100px;
-    height: 100px;
-  }
 }
 
-@media (max-width: 300px) {
-  .about-section {
-    padding: 1rem 0.5rem;
-  }
-
-  .intro {
-    font-size: 1.5rem;
-  }
-
+@media (max-width: 768px) {
   .about-content {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
   }
 
-  .vision, .wedo {
-    padding: 0.5rem;
-    font-size: 0.9rem;
+  .head-info {
+    order: -1;
+    display: flex;
+  }
+
+  .vision{
+    text-align: center;
+    padding: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  }
+  .wedo {
+    text-align: center;
+    padding: 1rem;
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
   }
 
   .head-photo {
-    width: 80px;
-    height: 80px;
+    width: 200px;
   }
-
-  .head-name {
-    font-size: 1rem;
+  .head-name{
+    font-size: 1.5em;
   }
-
-  .head-title {
-    font-size: 0.9rem;
+  .head-title{
+    font-size: 1.25em;
   }
-
-  .wedo ul {
-    padding-left: 1rem;
+  .intro{
+    font-size: 3em;
   }
-
-  .wedo ul li {
-    font-size: 0.9rem;
-  }
+  
+.vision h2, .wedo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+  letter-spacing: 3px;
 }
+
+.vision p, .wedo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #e0e0e0;
+}
+
+
+.wedo ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: " ➤ ";
+  color: #ff9800;
+  line-height: 1.5;
+}
+
+.wedo ul li {
+  margin: 0rem 0.5rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+}
+
+
+

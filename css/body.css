@@ -4,24 +4,15 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Public;
-    src: url("/fonts/PublicSans-VariableFont_wght.ttf") format('truetype');
-}
-
-body{
-    font-family: Public;
-    /* height: 400vh; */
-    height: auto;
-    overflow-x: hidden;
-
+body,html{
+    font-family: "Orbitron", sans-serif;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body::-webkit-scrollbar{
     display: none;
-}
-.extra-space{
-    height: 6vh;
-    background-color: black;
-    width: 100%;
 }

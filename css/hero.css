@@ -1,8 +1,8 @@
-/* _______________________________________________________Hero Section_______________________________________________________ */
+/* =============================== Hero Section Styles =============================== */
 
 .hero-section {
   height: 100vh;
-  width: 100vw;
+  width: 100vw; /* Full viewport width */
   background: linear-gradient(-45deg, #3f3f3f, rgb(21, 21, 21));
   background-size: 400% 400%; 
   animation: gradientAnimation 30s ease-in-out infinite;
@@ -10,55 +10,50 @@
   justify-content: center;
   align-items: center;
   gap: 10%;
-}
-.archi-part {
-  color: white;
-}
-
-.tech-part {
-  color: yellow;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .hero-writing-section {
   width: 40%;
   aspect-ratio: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   border-radius: 10px;
 }
 
-
-.hero-image-section{
+.hero-image-section {
   width: 40%;
   aspect-ratio: 1.12;
-  background: url(/img/hero-bg.png);
+  background: url(/img/hero-bg.png) no-repeat;
   background-size: contain;
   border-radius: 20px;
   animation: fade-in 2s ease-in-out;
 }
 
-.hero-text-title,.hero-text-title-part1{
+/* =============================== Hero Text Styling =============================== */
+
+.hero-text-title,
+.hero-text-title-part1 {
   font-family: "Orbitron", sans-serif;
-  color: white; 
-  letter-spacing: 15px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.7); 
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text-title {
   font-size: 5vw;
-  text-align: center;
   font-weight: bold;
-  margin: 5% 0%;
+  letter-spacing: 15px;
   color: #ff9800;
+  margin: 5% 0;
 }
-.hero-text-title-part1{
+
+.hero-text-title-part1 {
   font-size: 2vw;
-  line-gap-override: 10px;
-  margin: 7.5% 0%;
-  text-align: center;
+  color: white;
   line-height: 1.25;
+  margin: 7.5% 0;
 }
 
 .blinking-caret {
@@ -70,26 +65,24 @@
   border-radius: 1px;
 }
 
-/* _______________________________________________________Hero Button Styling_______________________________________________________ */
+/* =============================== Hero Button Styling =============================== */
 
 .get-started-button {
   font-family: "Orbitron", sans-serif;
   padding: 1%;
   font-size: 1.5vw;
-  color: rgb(255, 255, 255);
-  text-shadow: black;
+  color: white;
   background-color: transparent;
-  border: 1.5px solid rgb(5, 5, 5);
+  border: 1px solid white;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border-radius: 4px;
+  border-radius: 15px;
   font-weight: 600;
+  text-shadow: black;
   visibility: hidden;
   opacity: 0;
-  border: 1px solid white;  
-  margin: 6% 0%;
-  border-radius: 15px;
+  margin: 6% 0;
 }
 
 .get-started-button.glowing {
@@ -108,7 +101,7 @@
   transform: scale(0.95);
 }
 
-/* _______________________________________________________Animations_______________________________________________________ */
+/* =============================== Animations =============================== */
 
 @keyframes glowing-border {
   0% {
@@ -126,57 +119,37 @@
 }
 
 @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes fade-in {
-  0%{
-   opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes smooth-caret-blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
-
-/* _______________________________________________________Responsive_______________________________________________________ */
-
+/* =============================== Responsive Design =============================== */
 
 @media (max-width: 1400px) {
-  .hero-image-section{
+  .hero-image-section {
     display: none;
   }
-  .hero-writing-section{
+  .hero-writing-section {
     width: 80%;
     height: 60%;
   }
   .hero-text-title {
     font-size: 9vw;
-    margin: 4% 0%;
-    text-align: center;
+    margin: 4% 0;
   }
-  .hero-text-title-part1{
+  .hero-text-title-part1 {
     font-size: 5vw;
-    margin: 7.5% 0%;
-    line-height: 1.25;
   }
   .get-started-button {
     font-size: 3.5vw;
@@ -186,21 +159,20 @@
 }
 
 @media (max-width: 800px) {
-  .hero-image-section{
+  .hero-image-section {
     display: none;
   }
-  .hero-writing-section{
+  .hero-writing-section {
     width: 80%;
     height: 50%;
   }
   .hero-text-title {
     font-size: 9vw;
-    margin: 5% 0%;
-    text-align: center;
+    margin: 5% 0;
   }
-  .hero-text-title-part1{
+  .hero-text-title-part1 {
     font-size: 5vw;
-    margin: 8% 0%;
+    margin: 8% 0;
   }
   .get-started-button {
     font-size: 4.5vw;
