@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/team.css" />
     <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/progress.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
       rel="stylesheet"
@@ -17,13 +18,13 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">ArchiTechs</div>
+      <a href="#hero"><div class="logo">ArchiTechs</div></a>
 
       <div class="options">
-        <div class="nav-link">Events</div>
-        <div class="nav-link">Team</div>
-        <div class="nav-link">About</div>
-        <div class="nav-link">Contact Us</div>
+        <a href="#event"><div class="nav-link">Events</div></a>
+        <a href=""><div class="nav-link">Team</div></a>
+        <a href="#about"><div class="nav-link">About</div></a>
+        <a href=""><div class="nav-link">Contact Us</div></a>
       </div>
 
       <div class="hamburger">
@@ -33,22 +34,22 @@
       </div>
 
       <div class="dropdown-menu">
-        <div class="dropdown-item nav-link">Events</div>
-        <div class="dropdown-item nav-link">Team</div>
-        <div class="dropdown-item nav-link">About</div>
-        <div class="dropdown-item nav-link">Contact Us</div>
+        <a href="#event"><div class="dropdown-item nav-link">Events</div></a>
+        <a href=""><div class="dropdown-item nav-link">Team</div></a>
+        <a href="#about"><div class="dropdown-item nav-link">About</div></a>
+        <a href=""><div class="dropdown-item nav-link">Contact Us</div></a>
       </div>
     </div>
 
-    <div class="hero-section">
+    <div id="hero" class="hero-section">
       <div class="hero-image-section"></div>
       <div class="hero-writing-section">
         <span class="hero-text-title">ArchiTechs</span>
         <span class="hero-text-title-part1">Dev Club of IIT Goa</span>
-        <button class="get-started-button">Get Started -></button>
+        <a href="#about"><button class="get-started-button">Get Started ▼</button></a>
       </div>
     </div>
-    <div class="about-section">
+    <div id="about" class="about-section">
       <h1 class="intro">About ArchiTechs</h1>
       <div class="about-content">
           <div class="vision">
@@ -84,8 +85,8 @@
           </div>
       </div>
     </div>
-    <div class="event-section">
-      <div class="event-info">
+    <div class="event-section" style="height: 200vh; background-color: #333333;">
+      <div id="event" class="event-info">
         <ul class="events-list">
           <!-- <li></li> -->
         </ul>
@@ -145,6 +146,8 @@
       <div class="iit-mail"></div>
       <div class="react-out"></div>
     </div>
+    <div class="progress-bar"></div>
+
     <div class="footer">
       <div class="logo"></div>
       <div class="support"></div>
@@ -153,4 +156,7 @@
   </body>
   <script src="/js/hero.js"></script>
   <script src="/js/header.js"></script>
+  <script src="/js/about.js"></script>
+  <script src="/js/scroll.js"></script>
+  <script src="/js/progress.js"></script>
 </html>
