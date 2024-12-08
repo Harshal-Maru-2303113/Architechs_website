@@ -1,0 +1,29 @@
+@import url("./components/about.css");
+@import url("./components/body.css");
+@import url("./components/event.css");
+@import url("./components/header.css");
+@import url("./components/hero.css");
+@import url("./components/team.css");
+@import url("./utils/progress.css");
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: "Orbitron", sans-serif;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}

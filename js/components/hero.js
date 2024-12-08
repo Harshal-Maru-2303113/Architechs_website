@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const titleElement = document.querySelector(".hero-text-title");
   const textElement = document.querySelector(".hero-text-title-part1");

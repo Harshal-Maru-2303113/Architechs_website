@@ -26,7 +26,7 @@
 .hero-image-section {
   width: 40%;
   aspect-ratio: 1.12;
-  background: url(/img/hero-bg.png) no-repeat;
+  background: url(/img/hero-section/hero-bg.png) no-repeat;
   background-size: contain;
   border-radius: 20px;
   animation: fade-in 2s ease-in-out;
@@ -97,6 +97,7 @@
   background-color: #ff9800;
   color: black;
   box-shadow: 0 0 10px rgb(207, 207, 207);
+  
 }
 
 .get-started-button:active {

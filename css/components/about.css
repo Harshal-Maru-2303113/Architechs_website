@@ -104,6 +104,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ff9800;
+  user-select: none;
 }
 
 .head-name {
@@ -262,13 +263,15 @@
 
 /* Fade in Effect for about us section */
 
-.about-section {
+.about-content,.intro  {
   opacity: 0;
   transform: translateY(60px); 
   transition: opacity 0.6s ease-in-out, transform .9s ease-in-out;
 }
 
-.about-section.visible {
+.about-content.visible,.intro.visible {
   opacity: 1;
   transform: translateY(0); 
 }
+
+

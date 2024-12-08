@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const progressBar = document.querySelector(".progress-bar");
 
