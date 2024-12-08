@@ -16,7 +16,7 @@
 
       <div class="options">
         <a href="#event"><div class="nav-link">Events</div></a>
-        <a href=""><div class="nav-link">Team</div></a>
+        <a href="#team"><div class="nav-link">Team</div></a>
         <a href="#about"><div class="nav-link">About</div></a>
         <a href=""><div class="nav-link">Contact Us</div></a>
       </div>
@@ -29,7 +29,7 @@
 
       <div class="dropdown-menu">
         <a href="#event"><div class="dropdown-item nav-link">Events</div></a>
-        <a href=""><div class="dropdown-item nav-link">Team</div></a>
+        <a href="#team"><div class="dropdown-item nav-link">Team</div></a>
         <a href="#about"><div class="dropdown-item nav-link">About</div></a>
         <a href=""><div class="dropdown-item nav-link">Contact Us</div></a>
       </div>
@@ -43,6 +43,7 @@
         <a href="#about"><button class="get-started-button">Get Started ▼</button></a>
       </div>
     </div>
+    <div class="gap-between-section"></div>
     <div id="about" class="about-section">
       <h1 class="intro">About ArchiTechs</h1>
       <div class="about-content">
@@ -79,6 +80,7 @@
           </div>
       </div>
     </div>
+    <div class="gap-between-section"></div>
     <div class="event-section">
       <div id="event" class="event-info">
         <ul class="events-list">
@@ -86,23 +88,23 @@
         </ul>
       </div>
     </div>
+    <div class="gap-between-section"></div>
     <div id="team" class="team-section">
+      
+
       <h1 class="team-title">Meet the Team</h1>
       <div class="core-groups">
         <div class="core-group">
           <h2 class="group-title">Senior Core Members</h2>
           <div class="team-grid">
-            <figure class="team-member">
+            <figure class="team-member"  data-title="Harshal Rakeshbhai Maru" data-branch="Main Branch" data-mobile="+1234567890" data-description="Senior member of the team." data-image="img/about-section/Utsav_Shah_Core.jpg">
+              
               <img src="img/about-section/Utsav_Shah_Core.jpg" alt="Senior Member 1" class="member-photo" />
-              <figcaption class="member-name">Senior Member 1</figcaption>
+              <figcaption class="member-name">Harshal Rakeshbhai maru</figcaption>
             </figure>
             <figure class="team-member">
               <img src="img/about-section/Utsav_Shah_Core.jpg" alt="Senior Member 2" class="member-photo" />
               <figcaption class="member-name">Senior Member 2</figcaption>
-            </figure>
-            <figure class="team-member">
-              <img src="img/about-section/Utsav_Shah_Core.jpg" alt="Senior Member 3" class="member-photo" />
-              <figcaption class="member-name">Senior Member 3</figcaption>
             </figure>
             <figure class="team-member">
               <img src="img/about-section/Utsav_Shah_Core.jpg" alt="Senior Member 3" class="member-photo" />
@@ -149,7 +151,20 @@
         </div>
       </div>
     </div>
-    
+    <div id="popup-overlay" class="popup-overlay">
+      <div class="popup-content">
+        <button class="close-popup">×</button>
+        <div class="popup-header">
+          <img src="" alt="Member Image" class="popup-member-photo" />
+          <h2 id="popup-title"></h2>
+        </div>
+        <div class="popup-info">
+          <p class="popup-branch">Branch: <span id="popup-branch-name"></span></p>
+          <p class="popup-mobile">Mobile: <span id="popup-mobile-number"></span></p>
+          <p id="popup-description"></p>
+        </div>
+      </div>
+    </div>
     <div class="contact-section">
       <div class="iit-mail"></div>
       <div class="react-out"></div>

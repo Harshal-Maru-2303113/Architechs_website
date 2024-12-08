@@ -5,6 +5,7 @@
 @import url("./components/hero.css");
 @import url("./components/team.css");
 @import url("./utils/progress.css");
+@import url("./utils/gapBetweenSection.css");
 
 *{
     margin: 0;

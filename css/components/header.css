@@ -8,8 +8,8 @@
   position: fixed;
   letter-spacing: 3px;
   z-index: 9999;
-  background: rgba(18, 18, 18, 0.4);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: rgba(18, 18, 18, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 0 2.5rem;
   animation: glowing-box-shadow 3s infinite ease-in-out;
 }
