@@ -37,7 +37,6 @@
 .hero-image-section {
     width: 40%;
     aspect-ratio: 1.12;
-    background: url(/img/hero-section/hero-bg.png) no-repeat;
     background-size: contain;
     border-radius: 20px;
     animation: fade-in 2s ease-in-out;
