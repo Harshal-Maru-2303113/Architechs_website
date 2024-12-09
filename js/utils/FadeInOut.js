@@ -1,18 +1,23 @@
+export function FadeInOut(targetSelector, threshold = 0.4) {
+  document.addEventListener("DOMContentLoaded", () => {
+      const targetElement = document.querySelector(targetSelector);
 
- document.addEventListener("DOMContentLoaded",(about) => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          about.classList.add("visible"); // Add the visible class
+      if (!targetElement) {
+          console.error(`Element not found: ${targetSelector}`);
+          return;
+      }
 
-        } else {
-          about.classList.remove("visible"); // Remove the visible class
+      const observer = new IntersectionObserver(
+          ([entry]) => {
+              if (entry.isIntersecting) {
+                  targetElement.classList.add("visible"); // Add the visible class
+              } else {
+                  targetElement.classList.remove("visible"); // Remove the visible class
+              }
+          },
+          { threshold } // Trigger when the specified percentage of the section is visible
+      );
 
-        }
-      },
-      { threshold: .4 } // Trigger when 40% of the section is visible
-    );
-  
-    observer.observe(about);
-    
+      observer.observe(targetElement);
   });
+}

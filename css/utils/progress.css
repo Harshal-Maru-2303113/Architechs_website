@@ -1,9 +1,0 @@
-.progress-bar {
-    position: fixed;
-    bottom: 0; /* Place at the bottom of the screen */
-    left: 0;
-    width: 0; /* Initially 0% */
-    height: 5px; /* Thickness of the bar */
-    background: linear-gradient(to right, #ff9800, #ff5722); /* Gradient color */
-    z-index: 1000; /* Ensure it stays on top of content */
-  }

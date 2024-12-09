@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const titleElement = document.querySelector(".hero-text-title");
   const textElement = document.querySelector(".hero-text-title-part1");
@@ -7,18 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const sentences = [
     { element: titleElement, text: titleElement.textContent.trim() },
     { element: textElement, text: textElement.textContent.trim() },
-  ]; // get the two paragraph tags texts
+  ];
 
+  const typingSpeed = 100; // Typing speed (ms per character)
+  const sentenceDelay = 650; // Delay before typing the next sentence
+  const initialDelay = 1600; // Initial delay before typing starts
+
+  // Clear existing content in elements
   sentences.forEach(({ element }) => (element.innerHTML = ""));
 
   let currentSentenceIndex = 0;
-  const typingSpeed = 100; //typing speed
-  const sentenceDelay = 650; // next sentences speed
 
   const typeText = ({ element, text }, callback) => {
     let charIndex = 0;
 
-    const caret = document.createElement("span"); // for cursor blinking effect;
+    // Create a blinking caret
+    const caret = document.createElement("span");
     caret.classList.add("blinking-caret");
     element.appendChild(caret);
 
@@ -26,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (charIndex < text.length) {
         caret.before(document.createTextNode(text[charIndex]));
         charIndex++;
-        setTimeout(typeChar, typingSpeed); // type character by character
+        setTimeout(typeChar, typingSpeed);
       } else {
         caret.remove();
         callback();
@@ -36,8 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
     typeChar();
   };
 
+  /**
+   * Initiates the typing effect for the next sentence in the list.
+   */
   const typeNextSentence = () => {
-    // type next sentences
     if (currentSentenceIndex < sentences.length) {
       const currentSentence = sentences[currentSentenceIndex];
       typeText(currentSentence, () => {
@@ -49,5 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  setTimeout(typeNextSentence, 2000); //  delay for pop up animation to finish
+  setTimeout(typeNextSentence, initialDelay);
 });

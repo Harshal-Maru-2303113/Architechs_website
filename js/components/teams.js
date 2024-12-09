@@ -1,32 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Select the target elements
-  const teamSection = document.querySelector(".core-groups"); // Corrected class
-  const title = document.querySelector(".team-title");
+import {FadeInOut } from "../utils/FadeInOut.js"
 
-  if (!teamSection || !title) {
-    console.error(
-      "Team section or title not found. Check your HTML structure and class names."
-    );
-    return;
-  }
+FadeInOut(".core-groups",.2);
 
-  // Create IntersectionObserver
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        teamSection.classList.add("visible");
-        title.classList.add("visible");
-      } else {
-        teamSection.classList.remove("visible");
-        title.classList.remove("visible");
-      }
-    },
-    { threshold: 0.3 } // Trigger when 40% is visible
-  );
-
-  // Observe elements
-  observer.observe(teamSection);
-});
 
 document.querySelectorAll(".team-member").forEach((member) => {
   member.addEventListener("click", function () {
