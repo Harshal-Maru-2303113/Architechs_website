@@ -8,20 +8,27 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>ArchiTech</title>
   </head>
   <body>
     <div id="loading-screen">
       <div class="spinner"></div>
     </div>
-    
+
     <div class="header">
       <a href="#hero"><div class="logo">ArchiTechs</div></a>
       <div class="options">
         <a href="#event"><div class="nav-link">Events</div></a>
         <a href="#team"><div class="nav-link">Team</div></a>
         <a href="#about"><div class="nav-link">About</div></a>
-        <a href="#contact"><div class="nav-link">Contact Us</div></a>
+        <a href="#footer"><div class="nav-link">Contact Us</div></a>
       </div>
 
       <div class="hamburger">
@@ -34,7 +41,9 @@
         <a href="#event"><div class="dropdown-item nav-link">Events</div></a>
         <a href="#team"><div class="dropdown-item nav-link">Team</div></a>
         <a href="#about"><div class="dropdown-item nav-link">About</div></a>
-        <a href="#contact"><div class="dropdown-item nav-link">Contact Us</div></a>
+        <a href="#footer"
+          ><div class="dropdown-item nav-link">Contact Us</div></a
+        >
       </div>
     </div>
 
@@ -91,71 +100,55 @@
         <div class="carousel">
           <!-- list item -->
           <div class="list">
-              <div class="item">
-                  <img src="/img/events/img1.jpg">
-                  
-              </div>
-              <div class="item">
-                  <img src="/img/events/img2.jpg">
-                  
-              </div>
-              <div class="item">
-                  <img src="/img/events/img3.jpg">
-                  
-              </div>
-              <div class="item">
-                  <img src="/img/events/img4.jpg">
-                  
-              </div>
+            <div class="item">
+              <img src="/img/events/img1.jpg" />
+            </div>
+            <div class="item">
+              <img src="/img/events/img2.jpg" />
+            </div>
+            <div class="item">
+              <img src="/img/events/img3.jpg" />
+            </div>
+            <div class="item">
+              <img src="/img/events/img4.jpg" />
+            </div>
           </div>
           <!-- list thumnail -->
-           <div class="bottom">
-          <button id="prev" class="arrows block">⇐</button>
-          <button id="prev2" class="arrows hidden">⇑</button>
-          <div class="thumbnail">
-  
+          <div class="bottom">
+            <button id="prev" class="arrows block">⇐</button>
+            <button id="prev2" class="arrows hidden">⇑</button>
+            <div class="thumbnail">
               <div class="item">
-                  <img src="/img/events/img1.jpg"  class="small-item">
-                  <div class="content">
-                      <div class="title">
-                          Name Slider
-                      </div>
-                  </div>
+                <img src="/img/events/img1.jpg" class="small-item" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                </div>
               </div>
               <div class="item">
-                  <img class="small-item" src="/img/events/img2.jpg">
-                  <div class="content">
-                      <div class="title">
-                          Name Slider
-                      </div>
-                  </div>
+                <img class="small-item" src="/img/events/img2.jpg" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                </div>
               </div>
               <div class="item">
-                  <img src="/img/events/img3.jpg"  class="small-item">
-                  <div class="content">
-                      <div class="title">
-                          Name Slider
-                      </div>
-                  </div>
+                <img src="/img/events/img3.jpg" class="small-item" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                </div>
               </div>
               <div class="item">
-                  <img src="/img/events/img4.jpg"  class="small-item">
-                  <div class="content">
-                      <div class="title">
-                          Name Slider
-                      </div>
-                  </div>
+                <img src="/img/events/img4.jpg" class="small-item" />
+                <div class="content">
+                  <div class="title">Name Slider</div>
+                </div>
               </div>
-  
-  
+            </div>
+            <!-- next prev -->
+            <button id="next" class="arrows block">⇒</button>
+            <button id="next2" class="arrows hidden">⇓</button>
           </div>
-          <!-- next prev -->
-          <button id="next" class="arrows block">⇒</button>
-          <button id="next2" class="arrows hidden">⇓</button>
-          
+        </div>
       </div>
-      </div>
-    </div>
     </div>
     <div class="gap-between-section"></div>
     <div id="team" class="team-section">
@@ -270,52 +263,68 @@
         </div>
       </div>
     </div>
+    <div class="gap-between-section"></div>
+    <div class="gap-between-section"></div>
 
-    <div class="contact-section">
-      <h1 class="contact-title">Get in Touch</h1>
-      <div class="contact-content">
-        <div class="contact-item">
-          <div class="icon iit-mail-icon">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="info">
-            <h3>Email Us</h3>
-            <p>architechs@iitgoa.ac.in</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon react-out-icon">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="info">
-            <h3>Call Us</h3>
-            <p>+91-9876543210</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="footer">
+    <div id="footer" class="footer">
       <div class="footer-logo">
         <h2>ArchiTechs</h2>
         <p>Empowering Innovation</p>
+        <div class="iitgoa">
+          <a class="iitgoa-a" target="_blank" href="https://iitgoa.ac.in"
+            ><p style="font-size: 15px; margin-top: 25px">
+              Indian Institute Of Technology Goa
+            </p>
+          </a>
+          <div>
+            <a target="_blank" href="https://iitgoa.ac.in">
+              <img
+                class="iitgoa-logo"
+                src="https://iitgoa.ac.in/wp-content/uploads/IIT-Goa-Logo-scaled.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
       </div>
+
+      <div class="vertical-line"></div>
       <div class="footer-support">
         <h3>Support</h3>
         <a href="#about">About Us</a>
         <a href="#event">Events</a>
         <a href="#team">Team</a>
       </div>
+      <div class="vertical-line"></div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <div class="social-contact">
+          <a href="#" class="social-contact"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <div class="mobile-number">
+            <i class="fa-solid fa-mobile" id="copy-icon" title="Copy"></i>
+            <p id="mobile-text" title="Copy">+91 1234567890</p>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
       <div class="footer-social">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
       </div>
     </div>
-    
+
     <div class="progress-bar"></div>
     <div id="popup-overlay" class="popup-overlay">
       <div class="popup-content">

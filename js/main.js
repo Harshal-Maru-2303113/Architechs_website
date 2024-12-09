@@ -5,6 +5,7 @@ import "./components/hero.js";
 import "./utils/progress.js";
 import "./utils/scroll.js";
 import "./components/teams.js"
+import "./utils/copyClipboard.js"
 
 
 document.addEventListener("DOMContentLoaded", () => {
