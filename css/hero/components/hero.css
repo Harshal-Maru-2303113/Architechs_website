@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #ff9800;
+    --secondary-color: #f1683a;
+    --background-dark: #3f3f3f;
+    --background-darker: rgb(21, 21, 21);
+    --text-color: #ffffff;
+    --hover-color: rgba(0, 0, 0, 0.75);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --strong-shadow-color: rgba(0, 0, 0, 0.7);
+    --button-border-color: #ffffff;
+    --caret-color: var(--primary-color);
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, var(--background-dark), var(--background-darker));
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    overflow: hidden;
+}
+
+.hero-writing-section {
+    width: 40%;
+    aspect-ratio: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.hero-image-section {
+    width: 40%;
+    aspect-ratio: 1.12;
+    background: url(/img/hero-section/hero-bg.png) no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    animation: fade-in 2s ease-in-out;
+}
+
+.hero-text-title,
+.hero-text-title-part1 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px var(--shadow-color), 0 0 25px var(--strong-shadow-color);
+}
+
+.hero-text-title {
+    font-size: 5vw;
+    font-weight: bold;
+    letter-spacing: 15px;
+    color: var(--primary-color);
+    margin: 5% 0;
+}
+
+.hero-text-title-part1 {
+    font-size: 2vw;
+    color: var(--text-color);
+    line-height: 1.25;
+    letter-spacing: 15px;
+    margin: 7.5% 0;
+}
+
+.blinking-caret {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: var(--caret-color);
+    animation: smooth-caret-blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    border-radius: 1px;
+}
+
+.get-started-button {
+    font-family: "Orbitron", sans-serif;
+    padding: 2.5%;
+    font-size: 1.5vw;
+    color: var(--text-color);
+    letter-spacing: 5px;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    font-weight: 600;
+    visibility: hidden;
+    opacity: 0;
+    margin: 6% 0;
+}
+
+.get-started-button.glowing {
+    opacity: 1;
+    visibility: visible;
+    animation: glowing-border 2s forwards;
+}
+
+.get-started-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-darker);
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+.get-started-button:active {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 1400px) {
+    .hero-image-section {
+        display: none;
+    }
+    .hero-writing-section {
+        width: 80%;
+        height: 60%;
+    }
+    .hero-text-title {
+        font-size: 9vw;
+        margin: 4% 0;
+    }
+    .hero-text-title-part1 {
+        font-size: 5vw;
+    }
+    .get-started-button {
+        font-size: 3.5vw;
+        padding: 2%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-image-section {
+        display: none;
+    }
+    .hero-writing-section {
+        width: 80%;
+        height: 50%;
+    }
+    .hero-text-title {
+        font-size: 8vw;
+        margin: 5% 0;
+    }
+    .hero-text-title-part1 {
+        font-size: 5vw;
+        margin: 8% 0;
+        line-height: 1.6;
+    }
+    .get-started-button {
+        font-size: 4.5vw;
+        margin-top: 25%;
+        border-radius: 10px;
+    }
+}

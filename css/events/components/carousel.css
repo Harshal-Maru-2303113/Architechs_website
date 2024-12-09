@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #ff9800;
+    --secondary-color: #f1683a;
+    --background-dark: #3f3f3f;
+    --background-darker: rgb(21, 21, 21);
+    --text-color: #ffffff;
+    --hover-color: rgba(0, 0, 0, 0.75);
+    --shadow-color: #0004;
+    --border-color: #fff;
+    --button-bg: #eee;
+  }
+  
+  /* Event Info Section */
+  .event-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
+  }
+  
+  .event-info.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .event-section {
+    background: linear-gradient(-45deg, var(--background-dark), var(--background-darker));
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+  }
+  
+  /* Event Title */
+  .event-title {
+    font-size: 3.5rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    letter-spacing: 15px;
+  }
+  
+  /* Carousel */
+  .carousel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .carousel .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+  
+  .carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    background-position: center;
+  }
+  
+  .small-item {
+    border: 2px solid var(--secondary-color);
+  }
+  
+  .small-item:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .carousel .list .item .content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+
+    padding: 30%;
+    box-sizing: border-box;
+    color: var(--text-color);
+    text-shadow: 0 5px 10px var(--shadow-color);
+  }
+  
+  .carousel .list .item .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+  
+  .carousel .list .item .title,
+  .carousel .list .item .topic {
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+    width: 100%;
+    color: black;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .title {
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+  }
+  
+  .carousel .list .item .topic {
+    color: var(--secondary-color);
+  }
+  
+  .carousel .list .item .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .carousel .list .item .buttons button {
+    border: none;
+    background-color: var(--button-bg);
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+  }
+  
+  .carousel .list .item .buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+  
+  /* Animation for First Item */
+  .carousel .list .item:nth-child(1) .content .author,
+
+  .carousel .list .item:nth-child(1) .content .topic,
+  .carousel .list .item:nth-child(1) .content .des,
+  .carousel .list .item:nth-child(1) .content .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s ease-in-out 1 forwards;
+  }
+  
+
+  
+  .carousel .list .item:nth-child(1) .content .topic {
+    animation-delay: 1.4s !important;
+  }
+  
+  .carousel .list .item:nth-child(1) .content .des {
+    animation-delay: 1.6s !important;
+  }
+  
+  .carousel .list .item:nth-child(1) .content .buttons {
+    animation-delay: 1.8s !important;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 900px) {
+    .carousel .list .item .content {
+      padding-right: 0;
+    }
+  
+    .carousel .list .item .content .title {
+      font-size: 30px;
+    }
+  
+    .block {
+      display: none;
+    }
+  }
+  
