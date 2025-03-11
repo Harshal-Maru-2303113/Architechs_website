@@ -23,7 +23,7 @@
 }
 
 .team-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 15px;
   color: white;
   margin-top: 1rem;
@@ -35,7 +35,7 @@
 }
 
 .group-title {
-  font-size: 2.5rem;
+  font-size: 2em;
   margin-top: 3rem;
   margin-bottom: 3rem;
   color: #ff9800;
@@ -44,11 +44,11 @@
 }
 
 .team-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center; /* Centers items horizontally */
   align-items: center; /* Centers items vertically */
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .team-member {
@@ -63,6 +63,7 @@
   border-radius: 15px; /* Slightly more rounded for a softer look */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  ;
 }
 
 .team-member:hover {
@@ -83,7 +84,7 @@
   width: 150px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 3px solid #ff9800;
+  border: 3px solid #c2c2c2;
   object-fit: cover;
   margin: 1rem;
   transition: transform 0.4s ease, border-color 0.4s ease;
@@ -105,7 +106,7 @@
 }
 
 .team-member:hover .member-name {
-  color: #ff9800; /* Highlight name on hover */
+  color: #c2c2c2; /* Highlight name on hover */
 }
 
 .member-role {

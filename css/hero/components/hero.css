@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #ff9800;
-    --secondary-color: #f1683a;
+    --primary-color: #ffffffd8;
+    --secondary-color: #d1d1d1;
     --background-dark: #3f3f3f;
     --background-darker: rgb(21, 21, 21);
     --text-color: #ffffff;
@@ -47,10 +47,11 @@
     font-family: "Orbitron", sans-serif;
     text-align: center;
     text-shadow: 2px 2px 5px var(--shadow-color), 0 0 25px var(--strong-shadow-color);
+    
 }
 
 .hero-text-title {
-    font-size: 5vw;
+    font-size: 4.5rem;
     font-weight: bold;
     letter-spacing: 15px;
     color: var(--primary-color);
@@ -58,7 +59,7 @@
 }
 
 .hero-text-title-part1 {
-    font-size: 2vw;
+    font-size: 2rem;
     color: var(--text-color);
     line-height: 1.25;
     letter-spacing: 15px;

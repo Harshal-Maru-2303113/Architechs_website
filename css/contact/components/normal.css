@@ -1,7 +1,7 @@
 /* General Contact Section Styling */
 .icon {
   font-size: 3rem;
-  color: #ff9800;
+  color: #c2c2c2;
   margin-bottom: 1rem;
 }
 
@@ -37,7 +37,7 @@
 
 .footer-logo h2 {
   font-size: 2.25rem;
-  color: #ff9800;
+  color: #c2c2c2;
   letter-spacing: 3px;
 }
 
@@ -58,7 +58,7 @@
 .footer-social h3,
 .footer-contact h3 {
   font-size: 2rem;
-  color: #ff9800;
+  color: #c2c2c2;
   margin-bottom: 1rem;
   letter-spacing: 3px;
 }

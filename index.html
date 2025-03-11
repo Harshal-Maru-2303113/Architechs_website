@@ -15,6 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
     <title>ArchiTech</title>
   </head>
   <body>
@@ -23,7 +26,11 @@
     </div>
 
     <div class="header">
-      <a href="#hero"><div class="logo">ArchiTechs</div></a>
+      <a href="#hero" class="logo-section"
+        ><div class="logo">ArchiTechs</div>
+        <img src="./img/archi.png" alt="Logo" class="logo-image"
+      /></a>
+
       <div class="options">
         <a href="#event"><div class="nav-link">Events</div></a>
         <a href="#team"><div class="nav-link">Team</div></a>
@@ -48,7 +55,11 @@
     </div>
 
     <div id="hero" class="hero-section">
-      <img src="/Architechs_website/img/hero-section/hero-bg.png" alt="Hero-image" class="hero-image-section" />
+      <img
+        src="./img/hero-section/hero-bg.png"
+        alt="Hero-image"
+        class="hero-image-section"
+      />
       <div class="hero-writing-section">
         <span class="hero-text-title">ArchiTechs</span>
         <span class="hero-text-title-part1">Dev Club of IIT Goa</span>
@@ -62,14 +73,22 @@
       <h1 class="intro">About ArchiTechs</h1>
       <div class="about-content">
         <div class="vision">
-          <h2>Our Vision</h2>
+          <h2
+            style="
+              color: #ff9800;
+            "
+          >
+            Our Vision
+          </h2>
           <p>
             Empowering individuals with technology and fostering innovation. We
             strive to create impactful solutions and inspire future developers.
           </p>
         </div>
         <div class="wedo">
-          <h2>What We Do</h2>
+          <h2 style="
+          color: #ff9800;
+        ">What We Do</h2>
           <p>
             ArchiTechs hosts coding events, workshops, and hackathons, enabling
             members to learn, grow, and excel in web development and other
@@ -185,6 +204,14 @@
             <figure class="team-member">
               <img
                 src="./img/about-section/Utsav_Shah_Core.jpg"
+                alt="Senior Member 2"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Senior Member 2</figcaption>
+            </figure>
+            <figure class="team-member">
+              <img
+                src="./img/about-section/Utsav_Shah_Core.jpg"
                 alt="Senior Member 3"
                 class="member-photo"
               />
@@ -270,30 +297,6 @@
       <div class="footer-logo">
         <h2>ArchiTechs</h2>
         <p>Empowering Innovation</p>
-        <div class="iitgoa">
-          <a class="iitgoa-a" target="_blank" href="https://iitgoa.ac.in"
-            ><p style="font-size: 15px; margin-top: 25px">
-              Indian Institute Of Technology Goa
-            </p>
-          </a>
-          <div>
-            <a target="_blank" href="https://iitgoa.ac.in">
-              <img
-                class="iitgoa-logo"
-                src="https://iitgoa.ac.in/wp-content/uploads/IIT-Goa-Logo-scaled.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="vertical-line"></div>
-      <div class="footer-support">
-        <h3>Support</h3>
-        <a href="#about">About Us</a>
-        <a href="#event">Events</a>
-        <a href="#team">Team</a>
       </div>
       <div class="vertical-line"></div>
       <div class="footer-contact">

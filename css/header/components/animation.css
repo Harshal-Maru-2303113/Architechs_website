@@ -1,8 +1,8 @@
 :root {
-  --glow-color1: rgba(255, 152, 0, 0.7);
-  --glow-color2: rgba(255, 152, 0, 0.5);
-  --glow-color3: rgba(255, 152, 0, 0.9);
-  --glow-color4: rgba(255, 152, 0, 0.7);
+  --glow-color1: rgba(243, 243, 243, 0.7);
+  --glow-color2: rgba(209, 209, 209, 0.5);
+  --glow-color3: rgba(185, 185, 185, 0.9);
+  --glow-color4: rgba(133, 133, 133, 0.7);
   --gradient-color1: #ff9800;
   --gradient-color2: #f0e68c;
 }

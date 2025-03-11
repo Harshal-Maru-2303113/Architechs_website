@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ff9800;
+    --primary-color: #ffffff9d;
     --secondary-color: #e0e0e0;
     --hover-color: #ffffff;
     --background-color: rgba(18, 18, 18, 0.6);
@@ -11,7 +11,7 @@
   .header {
     user-select: none;
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,19 @@
     text-shadow: 2px 2px 8px var(--text-shadow-color);
     animation: gradientAnimation 5s infinite;
   }
-  
+
+  .logo-section{
+    display: flex;
+    gap: 1rem;
+    justify-content: center
+    ;
+    align-items: center;
+  }
+  .logo-image{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
   .options {
     display: flex;
     gap: 2rem;
