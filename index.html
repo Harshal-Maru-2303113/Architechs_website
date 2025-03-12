@@ -15,9 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
     <title>ArchiTech</title>
   </head>
   <body>
@@ -113,62 +111,64 @@
       </div>
     </div>
     <div class="gap-between-section"></div>
-    <div class="event-section">
-      <div id="event" class="event-info">
-        <h1 class="event-title">Events</h1>
-        <div class="carousel">
-          <!-- list item -->
-          <div class="list">
-            <div class="item">
-              <img src="./img/events/img1.jpg" />
-            </div>
-            <div class="item">
-              <img src="./img/events/img2.jpg" />
-            </div>
-            <div class="item">
-              <img src="./img/events/img3.jpg" />
-            </div>
-            <div class="item">
-              <img src="./img/events/img4.jpg" />
-            </div>
+    <div class="section" id="section2">
+      <section class="vertical-scrolling" id="page3">
+          <div class="container">
+              <div class="timeline">
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide" style="background-image: url(./img/events/img1.jpg)"
+                              data-year="Back 2 square 1">
+                              <div class="swiper-slide-content"><span class="timeline-year">17/08/2019</span>
+                                  <h4 class="timeline-title">Go Myno</h4>
+                              </div>
+                          </div>
+                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
+                              data-year="Elementary">
+                              <div class="swiper-slide-content"><span class="timeline-year">24/08/2019</span>
+                                  <h4 class="timeline-title">E & R</h4>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
+                              data-year="M-Dash Workshop">
+                              <div class="swiper-slide-content"><span class="timeline-year">07/09/2019</span>
+                                  <h4 class="timeline-title">M-Dash</h4>
+                              </div>
+                          </div>
+                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
+                              data-year="Autocad Workshop">
+                              <div class="swiper-slide-content"><span class="timeline-year">20/10/2019</span>
+                                  <h4 class="timeline-title">M-Dash</h4>
+                              </div>
+                          </div>
+                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/arduino_15.jpg)"
+                              data-year="Arduino Workshop">
+                              <div class="swiper-slide-content"><span class="timeline-year">29/9/2019</span>
+                                  <h4 class="timeline-title">E & R</h4>
+                              </div>
+                          </div>
+                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/carrace_2.jpg)"
+                              data-year="RC Car Racing">
+                              <div class="swiper-slide-content"><span class="timeline-year">29/11/2019</span>
+                                  <h4 class="timeline-title">Motorsports</h4>
+                              </div>
+                          </div>
+                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/infosec.jpg)"
+                              data-year="InfoSec Workshop">
+                              <div class="swiper-slide-content"><span class="timeline-year">16/02/2020</span>
+                                  <h4 class="timeline-title">InfoSec</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-pagination"></div>
+                  </div>
+              </div>
           </div>
-          <!-- list thumnail -->
-          <div class="bottom">
-            <button id="prev" class="arrows block">⇐</button>
-            <button id="prev2" class="arrows hidden">⇑</button>
-            <div class="thumbnail">
-              <div class="item">
-                <img src="./img/events/img1.jpg" class="small-item" />
-                <div class="content">
-                  <div class="title">Name Slider</div>
-                </div>
-              </div>
-              <div class="item">
-                <img class="small-item" src="./img/events/img2.jpg" />
-                <div class="content">
-                  <div class="title">Name Slider</div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="./img/events/img3.jpg" class="small-item" />
-                <div class="content">
-                  <div class="title">Name Slider</div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="./img/events/img4.jpg" class="small-item" />
-                <div class="content">
-                  <div class="title">Name Slider</div>
-                </div>
-              </div>
-            </div>
-            <!-- next prev -->
-            <button id="next" class="arrows block">⇒</button>
-            <button id="next2" class="arrows hidden">⇓</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+  </div>
     <div class="gap-between-section"></div>
     <div id="team" class="team-section">
       <h1 class="team-title">Meet the Team</h1>
@@ -349,4 +349,6 @@
     </div>
   </body>
   <script type="module" src="./js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+  
 </html>

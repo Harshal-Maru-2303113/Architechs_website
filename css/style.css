@@ -18,7 +18,7 @@ html {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Lexend", sans-serif;
+  font-family: "Lexend", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
 }
