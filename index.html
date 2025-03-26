@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+    />
     <title>ArchiTech</title>
   </head>
   <body>
@@ -65,28 +70,34 @@
           ><button class="get-started-button">Get Started ▼</button></a
         >
       </div>
+      <div class="icons">
+        <a href="https://www.facebook.com" target="_blank" class="icon-link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="icon-link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="icon-link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="icon-link">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
     </div>
     <div class="gap-between-section"></div>
     <div id="about" class="about-section">
       <h1 class="intro">About ArchiTechs</h1>
       <div class="about-content">
         <div class="vision">
-          <h2
-            style="
-              color: #ff9800;
-            "
-          >
-            Our Vision
-          </h2>
+          <h2 style="color: #ff9800">Our Vision</h2>
           <p>
             Empowering individuals with technology and fostering innovation. We
             strive to create impactful solutions and inspire future developers.
           </p>
         </div>
         <div class="wedo">
-          <h2 style="
-          color: #ff9800;
-        ">What We Do</h2>
+          <h2 style="color: #ff9800">What We Do</h2>
           <p>
             ArchiTechs hosts coding events, workshops, and hackathons, enabling
             members to learn, grow, and excel in web development and other
@@ -111,64 +122,98 @@
       </div>
     </div>
     <div class="gap-between-section"></div>
-    <div class="section" id="section2">
+    <div class="section" id="event">
       <section class="vertical-scrolling" id="page3">
-          <div class="container">
-              <div class="timeline">
-                  <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide" style="background-image: url(./img/events/img1.jpg)"
-                              data-year="Back 2 square 1">
-                              <div class="swiper-slide-content"><span class="timeline-year">17/08/2019</span>
-                                  <h4 class="timeline-title">Go Myno</h4>
-                              </div>
-                          </div>
-                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
-                              data-year="Elementary">
-                              <div class="swiper-slide-content"><span class="timeline-year">24/08/2019</span>
-                                  <h4 class="timeline-title">E & R</h4>
-                              </div>
-                          </div>
-
-                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
-                              data-year="M-Dash Workshop">
-                              <div class="swiper-slide-content"><span class="timeline-year">07/09/2019</span>
-                                  <h4 class="timeline-title">M-Dash</h4>
-                              </div>
-                          </div>
-                          <div class="swiper-slide"  style="background-image: url(./img/events/img1.jpg)"
-                              data-year="Autocad Workshop">
-                              <div class="swiper-slide-content"><span class="timeline-year">20/10/2019</span>
-                                  <h4 class="timeline-title">M-Dash</h4>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/arduino_15.jpg)"
-                              data-year="Arduino Workshop">
-                              <div class="swiper-slide-content"><span class="timeline-year">29/9/2019</span>
-                                  <h4 class="timeline-title">E & R</h4>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/carrace_2.jpg)"
-                              data-year="RC Car Racing">
-                              <div class="swiper-slide-content"><span class="timeline-year">29/11/2019</span>
-                                  <h4 class="timeline-title">Motorsports</h4>
-                              </div>
-                          </div>
-                          <div class="swiper-slide" style="background-image: url(images/eventsworkshop/infosec.jpg)"
-                              data-year="InfoSec Workshop">
-                              <div class="swiper-slide-content"><span class="timeline-year">16/02/2020</span>
-                                  <h4 class="timeline-title">InfoSec</h4>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-pagination"></div>
+        <div class="container">
+          <div class="timeline">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./img/events/img1.jpg)"
+                  data-year="Back 2 square 1"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">17/08/2019</span>
+                    <h4 class="timeline-title">Go Myno</h4>
                   </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./img/events/img1.jpg)"
+                  data-year="Elementary"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">24/08/2019</span>
+                    <h4 class="timeline-title">E & R</h4>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./img/events/img1.jpg)"
+                  data-year="M-Dash Workshop"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">07/09/2019</span>
+                    <h4 class="timeline-title">M-Dash</h4>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(./img/events/img1.jpg)"
+                  data-year="Autocad Workshop"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">20/10/2019</span>
+                    <h4 class="timeline-title">M-Dash</h4>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background-image: url(images/eventsworkshop/arduino_15.jpg);
+                  "
+                  data-year="Arduino Workshop"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">29/9/2019</span>
+                    <h4 class="timeline-title">E & R</h4>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background-image: url(images/eventsworkshop/carrace_2.jpg);
+                  "
+                  data-year="RC Car Racing"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">29/11/2019</span>
+                    <h4 class="timeline-title">Motorsports</h4>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background-image: url(images/eventsworkshop/infosec.jpg);
+                  "
+                  data-year="InfoSec Workshop"
+                >
+                  <div class="swiper-slide-content">
+                    <span class="timeline-year">16/02/2020</span>
+                    <h4 class="timeline-title">InfoSec</h4>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
+        </div>
       </section>
-  </div>
+    </div>
     <div class="gap-between-section"></div>
     <div id="team" class="team-section">
       <h1 class="team-title">Meet the Team</h1>
@@ -349,6 +394,5 @@
     </div>
   </body>
   <script type="module" src="./js/main.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 </html>

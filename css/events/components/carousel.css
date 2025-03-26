@@ -174,7 +174,7 @@
   -webkit-transform: translateX(3px);
   transform: translateX(3px);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .timeline .swiper-slide::after {
     right: -30%;
     bottom: -8%;

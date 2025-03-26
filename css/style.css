@@ -4,12 +4,13 @@
 @import url("./hero/module.css");
 @import url("./team/module.css");
 @import url("./contact/module.css");
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
+
 
 body,
 html {
@@ -18,9 +19,9 @@ html {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Lexend", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;

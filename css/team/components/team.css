@@ -1,7 +1,6 @@
 .team-section {
   width: 100%; /* Subtle gradient for depth */
   color: #e0e0e0;
-  font-family: "Orbitron", sans-serif;
   text-align: center;
 }
 
@@ -139,5 +138,10 @@
 
   .member-role {
     font-size: 0.9rem;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

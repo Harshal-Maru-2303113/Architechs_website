@@ -11,7 +11,6 @@
   max-width: 100%;
   background: var(--background-color);
   color: var(--text-color);
-  font-family: "Orbitron", sans-serif;
 }
 
 .intro {
@@ -96,6 +95,9 @@
     text-align: left;
     padding: 1rem;
   }
+  .intro{
+    font-size: 3em;
+  }
 }
 
 @media (max-width: 900px) {
@@ -135,5 +137,8 @@
   .wedo ul li {
     margin: 0 0.5rem;
     font-size: 1.1rem;
+  }
+  .intro{
+    font-size: 2.5em;
   }
 }
