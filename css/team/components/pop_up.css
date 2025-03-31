@@ -67,6 +67,7 @@
   margin: 1rem 0;
 }
 
+
 .close-popup {
   position: absolute;
   top: 1rem;
@@ -155,4 +156,8 @@
   .close-popup:hover {
     color: #ff0000;
   }
+  #popup-description{
+    font-size: .8rem;
+  }
+  
 }
