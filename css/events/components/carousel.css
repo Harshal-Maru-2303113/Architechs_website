@@ -56,6 +56,10 @@
 .timeline .swiper-slide-content {
   position: absolute;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   max-width: 310px;
   right: 50%;
@@ -81,6 +85,7 @@
   font-size: 34px;
   margin: 0 0 30px;
   opacity: 0;
+  text-align: center;
   -webkit-transform: translate3d(20px, 0, 0);
   transform: translate3d(20px, 0, 0);
   transition: 0.2s ease 0.5s;
@@ -225,6 +230,8 @@
     transform: rotate(90deg) translate(3px, 10px);
   }
 }
+
+
 @media screen and (min-width: 1024px) {
   .timeline .swiper-slide::after {
     right: -20%;
@@ -236,6 +243,7 @@
   .timeline .swiper-slide-content {
     right: 25%;
   }
+  
 }
 .timeline-year {
   display: flex !important;
@@ -252,3 +260,14 @@
   transform: translateX(-50%) !important;
 }
 
+.timeline-desc {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline-desc{
+    display: none;
+  }
+  
+}
