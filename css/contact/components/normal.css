@@ -1,6 +1,6 @@
 /* General Contact Section Styling */
 .icon {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #c2c2c2;
   margin-bottom: 1rem;
 }
@@ -18,20 +18,20 @@
 
 /* Footer Styling */
 .footer {
-  letter-spacing: 1.75px;
+  letter-spacing: 1.5px;
   background-color: #222222;
   color: #e0e0e0;
-  padding: 2rem 1rem;
+  padding: 1.5rem 0.75rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer-logo {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-logo h2 {
@@ -105,7 +105,8 @@
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+
   gap: 1rem;
 }
 
@@ -113,6 +114,11 @@
 .social-contact {
   color: #bbbbbb;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-contact{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-link i,
