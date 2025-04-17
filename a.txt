@@ -1,0 +1,54 @@
+
+<div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(./img/events/orientation.jpg)"
+                data-year="Orientation 2024">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">22/10/2024</span>
+                  <h4 class="timeline-title">ArchiTech's Oreintation</h4>
+                  <p class="timeline-desc">
+                    Architech’s Orientation covered our club’s goals, past
+                    projects, and upcoming opportunities in web development.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(./img/events/html-session.jpg)"
+                data-year="HTML Workshop">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">31/03/2025</span>
+                  <h4 class="timeline-title">HTML Workshop</h4>
+                  <p class="timeline-desc">
+                    Architech's HTML workshop introduced the fundamentals of
+                    HTML, guiding participants through building structured and
+                    accessible web pages."
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="
+                    background-image: url(img/events/snapCodeShowdown.jpg);
+                  " data-year="SnapCode Showdown">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">29/11/2019</span>
+                  <h4 class="timeline-title">SnapCode Showdown</h4>
+                  <p class="timeline-desc">
+                    SnapCode Showdown challenged participants to recreate a
+                    web page from memory under time constraints, testing their
+                    HTML and CSS skills. The event highlighted accuracy,
+                    efficiency, and creativity in web design.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(./img/events/hackathon.png)" data-year="Hackathon">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">18/12/2024</span>
+                  <h4 class="timeline-title">Hackathon</h4>
+                  <p class="timeline-desc">
+                    ArchiTechs Fullstack Hackathon: Build, Innovate, and Win!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>

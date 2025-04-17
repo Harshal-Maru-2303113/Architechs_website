@@ -1,18 +1,23 @@
-var timelineSwiper = new Swiper ('.timeline .swiper-container', {
-  direction: 'vertical',
-  loop: false,
-  speed: 1600,
-  pagination: '.swiper-pagination',
-  paginationBulletRender: function (swiper, index, className) {
-    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-    return '<span class="' + className + '">' + year + '</span>';
-  },
-  paginationClickable: true,
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
-  breakpoints: {
-    1024: {
-      direction: 'horizontal',
-    }
-  }
-});
+let currentSlide = 0;
+const inner = document.getElementById('carouselInner');
+const items = inner.children;
+const totalSlides = items.length;
+console.log(totalSlides);
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+
+
+inner.style.width = `${items.length * 100}%`; // ✅ ADD THIS LINE
+
+function updateCarousel() {
+  inner.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+}
+
+function moveSlide(direction) {
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  updateCarousel();
+}
+
+prevBtn.addEventListener('click', () => moveSlide(-1));
+nextBtn.addEventListener('click', () => moveSlide(1));
