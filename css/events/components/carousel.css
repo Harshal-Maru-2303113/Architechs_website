@@ -55,14 +55,12 @@
   font-size: 32px;
   font-weight: bold;
   color: #d4a024;
-  margin-bottom: 10px;
   z-index: 2;
 }
 
 .carousel-caption .h5 {
   font-size: 36px;
   font-weight: 700;
-  margin: 10px 0;
   z-index: 2;
 }
 
@@ -153,7 +151,7 @@
 
   /* Adjust position for title and paragraph */
   .carousel-caption .title-container {
-    top: 5%; /* Move the title and year a little above */
+    top: 0%; /* Move the title and year a little above */
   }
 
   .carousel-caption p {
