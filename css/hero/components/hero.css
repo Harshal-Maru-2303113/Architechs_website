@@ -14,7 +14,7 @@
 .hero-section {
     height: 100vh;
     width: 100vw;
-    background: url("./img/hero-section/bg.jpg");
+    background: url("/img/hero-section/bg.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
