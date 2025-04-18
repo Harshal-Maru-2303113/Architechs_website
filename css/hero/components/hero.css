@@ -202,4 +202,9 @@
     .logo-image {
         display: none;
      }
+    .hero-section{
+        background-image: url("/img/hero-section/bg_mobile.jpg");
+     }
+        
+
 }

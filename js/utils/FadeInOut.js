@@ -1,4 +1,4 @@
-export function FadeInOut(targetSelector, threshold = 0.4) {
+export function FadeInOut(targetSelector, threshold = 0.1) {
   document.addEventListener("DOMContentLoaded", () => {
       const targetElement = document.querySelector(targetSelector);
 
